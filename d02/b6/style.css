@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  background-color: #23272F;
+  color: white;
+}
+
+a {
+  color: #149ECA;
+  text-decoration: none;
+}
+
+div {
+  width: 900px auto;
+  height: 180px auto;
+  border-radius: 10px;
+  border: 1px solid #fbfbfb;
+  background: #23272F;
+}
+
+.Year {
+  opacity: 0.5;
+}

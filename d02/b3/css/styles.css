@@ -1,0 +1,41 @@
+/* Tất cả thẻ li sẽ có màu tím (purple) */
+li,
+a {
+  color: purple;
+}
+
+/* Tất cả thẻ h1 và h2 sẽ có màu "blue" (viết chung css không viết riêng) */
+h1,
+h2 {
+  color: blue;
+}
+
+/* Thẻ có id "submit" sẽ có màu nền là "green" */
+#submit {
+  background-color: green;
+}
+
+/* Thẻ span nằm bên trong thẻ có id "courses" có màu đỏ */
+#courses span {
+  color: red;
+}
+
+/* Tất cả các thẻ có class "type" sẽ có text màu "magenta" */
+.type {
+  color: magenta;
+}
+
+/* Thẻ input có type là email sẽ có màu nền là "orange" */
+input[type=email] {
+  background-color: orange;
+}
+
+/* Tất cả thẻ link có href kết thúc là ".org" sẽ có màu chữ là "magenta" */
+a[href$="org"] {
+  color: magenta;
+}
+
+/* Thẻ h2 có class "bright" sẽ có màu chữ là "cyan" */
+h2.bright {
+  color: cyan;
+}
