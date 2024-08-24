@@ -1,0 +1,33 @@
+ * {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+ }
+
+ body {}
+
+ div.orange {
+   background-color: orange;
+   width: 900px;
+   margin: 10px auto;
+   font-size: 0px;
+ }
+
+ div.orange p.left {
+   /* 300 + 10 + 10 + 20+20 */
+   background-color: green;
+   width: 300px;
+   display: inline-block;
+   font-size: 16px;
+   border: 10px solid red;
+   padding: 20px;
+
+ }
+
+ div.orange p.right {
+   background-color: blue;
+   width: 600px;
+   display: inline-block;
+   font-size: 16px;
+   padding: 20px;
+ }

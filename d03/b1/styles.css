@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {}
+
+div.yellow {
+  background-color: #FED049;
+  width: 1000px;
+  margin: 20px auto;
+  font-size: 0px;
+}
+
+div.yellow p {
+
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 23px;
+  width: 220px;
+  padding: 20px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+div.yellow p:nth-child(odd) {
+  background: #007580;
+}
+
+div.yellow p:nth-child(even) {
+  background: #282846;
+}
