@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+div.box-socials {
+  background: #F0E68C;
+  margin-top: 20px;
+  width: 500px;
+  /*height: 140px; */
+  text-align: center;
+  margin: 20px auto 0px auto;
+  padding: 20px 0px;
+  font-size: 0px;
+}
+
+div.box-socials a {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: red;
+  margin-right: 34px;
+  border-radius: 50%;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+}
+
+div.box-socials a:last-child {
+  margin-right: 0px;
+}
+
+div.box-socials a.instagram {
+  background: linear-gradient(45deg, #FF9C02 0%, #FF0C52 35%, #FC01CF 100%);
+}
+
+div.box-socials a.facebook {
+  background: #FFFFFF;
+}
+
+div.box-socials a.twitter {
+  background: #000000;
+}
+
+a.twitter i {
+  color: #FFFFFF;
+}
+
+a.facebook i {
+  color: #0866FF;
+}
+
+a.instagram i {
+  color: #FFFFFF;
+
+}
