@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbec20;
+  font-family: "Mulish", sans-serif;
+}
+
+div.form {
+  width: 625px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+div.form div.form-header {
+  background-color: #20225E;
+  padding: 101px 0px 70px 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 625px;
+  height: 211px;
+}
+
+div.form div.form-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+div.form div.form-header button.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #2F316E;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+}
+
+div.form-body {
+  padding: 65px 117px 70px 117px;
+  height: 567px;
+}
+
+div.form-body div.form-group {
+  padding-bottom: 40px;
+}
+
+div.form-body div.form-group label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.57px;
+  color: #151749;
+
+}
+
+div.form-body div.form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #D3D5F1;
+  padding: 13px;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+div.form-body div.form-group input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.59px;
+  color: #151749;
+}
+
+div.form-body div.form-group select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #D3D5F1;
+  padding: 13px;
+  margin-bottom: 65px;
+  color: #151749;
+  font-size: 18px;
+  line-height: 22.59px;
+}
+
+div.form div.form-submit button.btn-submit {
+  margin-left: 65px;
+  border-radius: 50px;
+  border: none;
+  background-color: #20225E;
+  color: #FFFFFF;
+  width: 247px;
+  height: 77px;
+  font-size: 18px;
+  margin-top: -50px;
+  position: absolute;
+}
