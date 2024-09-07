@@ -13,7 +13,6 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
@@ -24,7 +23,7 @@ header nav ul {
 header nav ul li button {
   padding: 12px 27px;
   border-radius: 6px;
-  border: 1px solid #1D1D2480;
+  border: 2px solid #1D1D2480;
 }
 
 section.hero {
@@ -35,24 +34,21 @@ section.hero {
 section.hero img.avatar {
   width: 400px;
   height: 400px;
-  margin: 150px 1089px 150px 413px;
+  border-radius: 200px;
+  border: 14px solid #ffff;
+  position: absolute;
+  top: 150px;
   left: 413.61px;
-  border-radius: 50%;
-  background-color: #e50000;
-  border: 10px solid #ffff;
-}
-
-div.info {
-  margin: -415px 0px 466px 847px;
-}
-
-div.info span {
-  font-family: Poppins;
-  color: #1F1F25;
 }
 
 h1.title span.color {
   color: #F9004D;
+}
+
+section.hero div.info {
+  position: absolute;
+  top: 295px;
+  left: 847.89px;
 }
 
 div.info h1.title,
@@ -65,12 +61,15 @@ h2.list {
   margin-top: 120px;
   text-align: center;
   color: #1D1D24;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.95px;
 }
 
 section.portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 div.card {
@@ -89,8 +88,7 @@ div.card img {
   width: 540.89px;
   height: 360.31px;
   border-radius: 10px;
-  margin-bottom: 26px;
-  margin-top: 60px;
+  margin: 60px 106px 26px 106px;
 }
 
 section.portfolio div.card {
