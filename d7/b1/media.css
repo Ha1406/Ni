@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+  body {}
+
+  section.hero {
+    flex-wrap: wrap;
+  }
+
+  section.portfolio {
+    padding: 0px 20px;
+  }
+
+  section.portfolio div.card {
+
+    width: 100%;
+
+    margin-right: 0px;
+  }
+
+  section.hero img.avatar {
+    margin-bottom: 50px;
+    width: 330px;
+    height: 330px;
+  }
+
+  header nav ul li {
+    font-size: 10px;
+  }
+
+  header nav ul li button.btn-contact {
+    font-size: 10px;
+  }
+
+  section.hero div.info {
+    text-align: center;
+  }
+
+  div.info span.first {
+    font-size: 23px;
+  }
+
+  h2.list {
+    font-size: 35px;
+  }
+}
