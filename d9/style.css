@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background: linear-gradient(135deg, #F3F2FD 0%, #F9F4FC 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.main-content {
+  width: 1152px;
+  height: 865px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  margin: 168px 224px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+
+div.left {
+  width: 465px;
+  height: 785px;
+  border-radius: 5px 0px 0px 5px;
+  background: linear-gradient(135deg, #BA91E9 0%, #6D58CE 100%);
+  color: #FFFFFF;
+  padding-top: 65px;
+  padding-left: 65px;
+  padding-right: 159px;
+}
+
+i.fa-check {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.sticker h3 {
+  padding-top: 17px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25.1px;
+}
+
+div.sticker p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
+}
+
+div.sticker {
+  margin-bottom: 40px;
+}
+
+div.right {
+  width: 417px;
+  height: 579px;
+}
+
+div.right label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+div.right h2 {
+  padding-bottom: 35px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40.16px;
+
+}
+
+div.form-group {
+  padding-bottom: 35px;
+}
+
+div.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.08px;
+  color: #151E42;
+}
+
+div.form-group input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
+  width: 417px;
+  height: 60px;
+  border: 1px solid #C6C8CD;
+  border-radius: 5px;
+}
+
+div.form-group input::placeholder {
+  color: #151E42;
+  padding-left: 20px;
+}
+
+div.select {
+  padding-bottom: 40px;
+}
+
+div.select input {
+  width: 29px;
+  height: 29px;
+  border: 1px solid #C6C8CD;
+}
+
+div.select label.no-newline {
+  display: inline;
+  color: #151E42;
+  position: relative;
+  bottom: 8px;
+}
+
+button.submit {
+  width: 417px;
+  height: 60px;
+  background: #6E59CE;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.08px;
+  color: #FFFFFF;
+}
