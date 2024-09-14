@@ -57,7 +57,7 @@ div.form-body {
 }
 
 div.form-body div.form-group {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 div.form-body div.form-group label {
@@ -72,9 +72,9 @@ div.form-body div.form-group input {
   width: 100%;
   border: none;
   border-bottom: 2px solid #D3D5F1;
-  padding: 13px;
-  margin-bottom: 14px;
   font-size: 18px;
+  padding-bottom: 13px;
+  margin-top: 14px;
 }
 
 div.form-body div.form-group input::placeholder {
@@ -89,14 +89,17 @@ div.form-body div.form-group select {
   border: none;
   border-bottom: 2px solid #D3D5F1;
   padding: 13px;
-  margin-bottom: 65px;
   color: #151749;
   font-size: 18px;
   line-height: 22.59px;
+  padding-left: 0px;
+}
+
+div.form div.form-submit {
+  text-align: center;
 }
 
 div.form div.form-submit button.btn-submit {
-  margin-left: 65px;
   border-radius: 50px;
   border: none;
   background-color: #20225E;
@@ -104,6 +107,11 @@ div.form div.form-submit button.btn-submit {
   width: 247px;
   height: 77px;
   font-size: 18px;
-  margin-top: -50px;
-  position: absolute;
+  margin-top: 25px;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
 }
