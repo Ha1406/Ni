@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+header {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 45px;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 56px;
+  font-size: 18px;
+}
+
+
+header a.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #14203E3D;
+}
+
+header div {
+  display: flex;
+  gap: 15px;
+}
+
+header div button {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 13px 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+header div button.login {
+  color: #000;
+  background: #F6F0E8;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+header div button.free-trial {
+  background: #14203E;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+ul li a {
+  color: #14203E;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+section.title {
+  background: #FFFCF8;
+  text-align: center;
+  padding: 130px 0px;
+}
+
+section.title h1 {
+  padding-bottom: 30px;
+  font-size: 66px;
+  line-height: 71.94px;
+  color: #14203E;
+}
+
+section.title p {
+  padding-bottom: 40px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #14203E;
+}
+
+section.title button {
+  background: #14203E;
+  padding: 25px 40px;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+div.title {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px 0px;
+}
+
+div.title span.line {
+  background: #14203E33;
+  width: 200px;
+  height: 1px;
+  margin-top: 8px;
+}
+
+div.title h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #14203E;
+}
+
+div.list-box {
+  display: flex;
+  gap: 30px;
+  margin: 0px 173px 62px 173px;
+}
+
+div.box img {
+  margin-bottom: 20px;
+}
+
+div.box h4 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 23.98px;
+  color: #14203E;
+}
+
+div.box span {
+  font-size: 14px;
+  color: #14203E;
+}
+
+/* <section class="news">
+    <div class="title">
+      <span class="line"></span>
+      <h5>We share our thoughts on design</h5>
+      <span class="line"></span>
+    </div>
+    <div class="list-box">
+      <div class="box">
+        <img src="img/Rectangle 8 (3).png" alt="Redesigning my site increased sales by over 400% in one week.">
+        <h4>Redesigning my site increased sales by over 400% in one week.</h4>
+        <span class="date">Jul 1, 2020</span>
+      </div>
+      <div class="box">
+        <img src="img/Rectangle 8 (2).png" alt="Design handoff: What engineers really want to see">
+        <h4>Design handoff: What engineers really want to see</h4>
+        <span class="date">Jul 1, 2020</span>
+      </div>
+      <div class="box">
+        <img src="img/Rectangle 8 (1).png" alt="A comprehensive list of human-computer interactions">
+        <h4>A comprehensive list of human-computer interactions</h4>
+        <span class="date">Jul 1, 2020</span>
+      </div>
+      <div class="box">
+        <img src="img/Rectangle 8.png" alt="Why do people hate redesigns?">
+        <h4>Why do people hate redesigns?</h4>
+        <span class="date">Jul 1, 2020</span>
+      </div>
+    </div>
+    </div>
+  </section>  */
