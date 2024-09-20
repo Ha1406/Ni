@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2148C0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.interface img {
+  width: 119.39px;
+  height: 97.85px;
+}
+
+div.interface div.login {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login input {
+  width: 300px;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.interface .fa-solid {
+  position: absolute;
+  padding: 12px;
+}
+
+/* <div class="interface">
+<img src="img/title.jpg" alt="icon">
+<div class="login">
+  <div class="input">
+    <i class="fa-solid fa-user"></i>
+    <input type="text" placeholder="USERNAME">
+  </div>
+  <div class="input">
+    <i class="fa-solid fa-lock"></i>
+    <input type="text" placeholder="PASSWORD">
+  </div>
+  <button>LOGIN</button>
+  <a href="">Forgot password?</a>
+</div>
+</div> */

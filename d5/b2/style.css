@@ -4,6 +4,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  padding: 20px;
+}
+
 img {
   width: 150px;
 }
@@ -14,10 +18,10 @@ table {
   border-collapse: collapse;
 }
 
-table.menu tr.title {
+tr.title {
   background-color: #415466;
   color: #ffffff;
-
+  height: 50px;
 }
 
 
@@ -43,4 +47,67 @@ td button.change-color {
 
 th.list {
   width: 40px;
+}
+
+i.icon {
+  color: white;
+  background: #37B99B;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+}
+
+i.trash {
+  color: white;
+  background: #D83347;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+}
+
+i.move {
+  color: white;
+  background: #6D757D;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+}
+
+th.list {
+  padding-left: 8.4px;
+}
+
+td.number {
+  padding-left: 8.4px;
+}
+
+td.content p {
+  margin-bottom: 8px;
+}
+
+td.time p {
+  font-size: 16px;
+  color: #415466;
+  margin-bottom: 8px;
+}
+
+td.time p i.fa-user {
+  margin-right: 5px;
+}
+
+td.time p i.fa-clock {
+  margin-right: 3px;
+}
+
+
+td input {
+  width: 65px;
+  padding: 6.8px 8.6px 6.8px 8.8px;
+  border: 1px solid #DEE2E6;
 }

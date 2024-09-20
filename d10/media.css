@@ -1,0 +1,47 @@
+@media screen and (max-width: 500px) {
+  body {}
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  header a.logo {
+    display: none;
+  }
+
+  header ul {
+    gap: 20px;
+  }
+
+  ul li a {
+    font-size: 15px;
+  }
+
+  header div {
+    display: none;
+  }
+
+  section.title {
+    padding: 40px 0px;
+  }
+
+  div.title span.line {
+    display: none;
+  }
+
+  div.list-box {
+    padding: 0px 20px;
+    display: block;
+  }
+
+  section.title h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  div.box {
+    margin-bottom: 20px;
+  }
+}

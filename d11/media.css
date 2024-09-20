@@ -1,0 +1,50 @@
+@media only screen and (max-width: 500px) {
+  body {
+    background: lightblue;
+  }
+
+  div.ellipse-1 {
+    display: none;
+  }
+
+  div.ellipse-2 {
+    display: none;
+  }
+
+  div.body {
+    background: none;
+    margin: 0px;
+    padding: 35px;
+  }
+
+  .title h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .select button {
+    height: 35px;
+    padding: 3px;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  div.list-content {
+    display: block;
+  }
+
+  div.content {
+    display: block;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .content .img .list-image {
+    margin-top: 10px;
+  }
+
+  .content .img .list-image img {
+    width: calc((100% - 32px)/3);
+  }
+}

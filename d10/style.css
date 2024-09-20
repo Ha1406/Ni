@@ -124,17 +124,18 @@ div.title h5 {
 
 div.list-box {
   display: flex;
-  justify-content: space-around;
   gap: 30px;
+  padding: 0px 173px;
 }
 
 div.box {
-  width: 290px;
+  flex: 1;
   cursor: pointer;
 }
 
 div.box img {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 div.box h4 {
