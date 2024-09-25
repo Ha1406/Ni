@@ -1,0 +1,306 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #171717;
+  color: #fff;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #FAFAF9;
+}
+
+section {
+  padding: 0px 144px;
+}
+
+.pd64 {
+  padding: 0px 64px;
+}
+
+.pd144 {
+  padding: 0px 144px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  font-family: Inter;
+  justify-content: space-between;
+  margin: 49px 64px;
+  align-items: center;
+}
+
+nav>a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FAFAF9;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  align-items: center;
+}
+
+nav ul li a {
+  font-size: 12px;
+  color: #FAFAF9;
+}
+
+.workout h1 {
+  font-size: 172px;
+  line-height: 170px;
+  color: #FAFAF9;
+}
+
+.workout {
+  margin-top: 180px;
+}
+
+.workout p {
+  font-family: Inter;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: 46px;
+  margin-bottom: 50px;
+  color: #EFEDE8A6;
+}
+
+.workout .orange {
+  cursor: pointer;
+  padding: 24px 25px;
+  border-radius: 10px;
+  background: #E6533C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 112px;
+  display: flex;
+  flex: 1;
+}
+
+.workout span {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #EFEDE8A6;
+}
+
+.time-to-start {
+  margin-top: 200px;
+}
+
+.time-to-start h2 {
+  margin-bottom: 24px;
+}
+
+.time-to-start>p {
+  font-family: Inter;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #EFEDE8A6;
+  margin-bottom: 50px;
+}
+
+.time-to-start .list-program {
+  display: flex;
+  gap: 32px;
+}
+
+.time-to-start .list-program .program {
+  background: #323443;
+  padding: 52.5px 40px;
+  margin-bottom: 20px;
+  width: 304px;
+  height: 190px;
+  border-radius: 12px;
+}
+
+.time-to-start .list-program .program h5 {
+  margin-bottom: 12px;
+  font-family: Inter;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.time-to-start .list-program .program .arrow {
+  display: flex;
+}
+
+.time-to-start .list-program .program .arrow p {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #EFEDE8A6;
+}
+
+.time-to-start .list-program .program .arrow a {
+  color: #FAFAF9;
+}
+
+.benefit {
+  margin: 189px 0px;
+  display: grid;
+  gap: 121px;
+}
+
+.benefit .workout-at-home {
+  display: flex;
+
+}
+
+.benefit .workout-at-home .content-b {
+  margin-left: 89px;
+}
+
+.benefit .workout-at-home .content h2 {
+  margin-bottom: 38px;
+}
+
+.benefit .workout-at-home .content p {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-right: 112px;
+  color: #EFEDE8A6;
+  margin-bottom: 24px;
+}
+
+.benefit .workout-at-home .content a {
+  font-family: Inter;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #0070C9;
+}
+
+.benefit .workout-at-home .content a i {
+  color: #FAFAF9;
+  margin-left: 8px;
+}
+
+.benefit .workout-at-home img.yoga {
+  width: 640px;
+  height: 539px;
+}
+
+.benefit .workout-at-home img.calisthenic {
+  width: 560px;
+  height: 510px;
+}
+
+.membership {
+  margin: 11px 0px 36px 0px;
+}
+
+.membership h2 {
+  margin-bottom: 12px;
+}
+
+.membership .line {
+  background: #FFFFFF;
+  width: 100%;
+  height: 2px;
+  border: 0.5px;
+  margin-bottom: 32px;
+  opacity: 40%;
+}
+
+.membership .list-select {
+  display: flex;
+  gap: 69px;
+}
+
+.membership .list-select .select {
+  background: #232532;
+  padding: 71px 68px;
+}
+
+.membership .list-select .select h2 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 34px;
+  color: #FAFAF9;
+}
+
+.membership .list-select .select p {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  color: #EFEDE8A6;
+}
+
+.membership .list-select .select ul {
+  padding-left: 20px;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #EFEDE8A6;
+}
+
+.membership .list-select .select a {
+  color: #0070C9;
+  display: flex;
+  gap: 8px;
+}
+
+.membership .list-select .select a i {
+  color: #FAFAF9;
+}
+
+.membership .list-select .select .blue {
+  padding: 4px 14px 4px 14px;
+  border-radius: 10px;
+  background: #0070C9;
+  border: none;
+  color: #FAFAF9;
+}
+
+.membership .list-select .select .select {
+  background: brown;
+}
+
+.membership .list-select .select .select-one {
+  margin-bottom: 102px;
+}
+
+.membership .list-select .select .select-two {
+  margin-bottom: 28px;
+}
+
+button.white {
+  padding: 7px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #303030;
+  position: fixed;
+  bottom: 27px;
+  right: 64px;
+  cursor: pointer;
+}
+
+button.white i {
+  color: #2E3A59;
+}
