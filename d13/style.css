@@ -63,10 +63,115 @@ nav ul li a {
   font-size: 172px;
   line-height: 170px;
   color: #FAFAF9;
+  font-family: Inter;
 }
 
 .workout {
   margin-top: 180px;
+  position: relative;
+}
+
+.workout .img {
+  position: absolute;
+  right: 171px;
+}
+
+.workout .img .box-1 {
+  background: #EF8964;
+  position: absolute;
+  width: 180px;
+  height: 110px;
+  border-radius: 12px;
+  top: -26px;
+  right: -63px;
+  padding: 16px 20px;
+}
+
+.workout .img .box-1 i {
+  margin-bottom: 8px;
+}
+
+.workout .img .box-1 .number-1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.workout .img .box-1 .parameter-1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.workout .img .box-2 {
+  background: #303030;
+  width: 206px;
+  height: 96px;
+  border-radius: 12px;
+  padding: 20px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 225px;
+  left: -123px;
+}
+
+.workout .img .box-2 .radius {
+  width: 40px;
+  height: 40px;
+  background: #EF8963;
+  border-radius: 50%;
+}
+
+.workout .img .box-2 .radius i {
+  transform: translate(130%, 70%);
+}
+
+.workout .img .box-2 .right {
+  display: grid;
+}
+
+.workout .img .box-2 .number-2 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FAFAF9;
+}
+
+.workout .img .box-2 .parameter-2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #EFEDE8A6;
+}
+
+.workout .img .box-3 {
+  width: 193px;
+  height: 98px;
+  border-radius: 12px;
+  background: #7A29DC;
+  padding: 16px 23px;
+  margin-left: 220px;
+  position: absolute;
+  bottom: 123px;
+  left: 127px;
+}
+
+.workout .img .box-3 .number-3 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FAFAF9;
+}
+
+.workout .img .box-3 .parameter-3 {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  color: #EFEDE8A6;
 }
 
 .workout p {
@@ -76,6 +181,7 @@ nav ul li a {
   margin-top: 46px;
   margin-bottom: 50px;
   color: #EFEDE8A6;
+  width: 560px;
 }
 
 .workout .orange {
@@ -92,12 +198,18 @@ nav ul li a {
   flex: 1;
 }
 
-.workout span {
+.workout span.feature {
   font-family: Inter;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
   color: #EFEDE8A6;
+}
+
+section.logo {
+  margin-top: 33px;
+  display: flex;
+  gap: 18px;
 }
 
 .time-to-start {
@@ -128,6 +240,7 @@ nav ul li a {
   width: 304px;
   height: 190px;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .time-to-start .list-program .program h5 {
@@ -161,7 +274,11 @@ nav ul li a {
 
 .benefit .workout-at-home {
   display: flex;
+  align-items: center;
+}
 
+.benefit .workout-at-home .content-a {
+  margin-right: 112px;
 }
 
 .benefit .workout-at-home .content-b {
@@ -177,19 +294,18 @@ nav ul li a {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.3px;
-  margin-right: 112px;
   color: #EFEDE8A6;
   margin-bottom: 24px;
 }
 
-.benefit .workout-at-home .content a {
+a {
   font-family: Inter;
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #0070C9;
 }
 
-.benefit .workout-at-home .content a i {
+a i {
   color: #FAFAF9;
   margin-left: 8px;
 }
@@ -257,16 +373,6 @@ nav ul li a {
   line-height: 24px;
   letter-spacing: 0.5px;
   color: #EFEDE8A6;
-}
-
-.membership .list-select .select a {
-  color: #0070C9;
-  display: flex;
-  gap: 8px;
-}
-
-.membership .list-select .select a i {
-  color: #FAFAF9;
 }
 
 .membership .list-select .select .blue {
