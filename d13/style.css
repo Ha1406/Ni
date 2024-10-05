@@ -38,7 +38,6 @@ nav {
   font-family: Inter;
   justify-content: space-between;
   margin: 49px 64px;
-  align-items: center;
 }
 
 nav>a {
@@ -212,7 +211,7 @@ section.logo {
   gap: 18px;
 }
 
-.time-to-start {
+section.time-to-start {
   margin-top: 200px;
 }
 
@@ -311,13 +310,11 @@ a i {
 }
 
 .benefit .workout-at-home img.yoga {
-  width: 640px;
-  height: 539px;
+  width: 100%;
 }
 
 .benefit .workout-at-home img.calisthenic {
-  width: 560px;
-  height: 510px;
+  width: 100%;
 }
 
 .membership {
