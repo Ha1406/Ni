@@ -9,13 +9,13 @@
 
   nav ul {
     text-align: center;
-    margin-left: 200px;
+    margin-left: 80px;
     gap: 50px;
   }
 
   .workout .img {
     position: relative;
-    left: 200px;
+    left: 100px;
   }
 
   section.time-to-start {
@@ -33,12 +33,12 @@
   }
 
   .workout h1 {
-    font-size: 70px;
-    width: 500%;
+    font-size: 65px;
+    width: 700px;
   }
 
   .workout .orange {
-    transform: translateX(200%);
+    transform: translateX(180%);
   }
 
   .benefit {
