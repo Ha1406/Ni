@@ -34,9 +34,7 @@ a {
 }
 
 nav {
-  display: flex;
   font-family: Inter;
-  justify-content: space-between;
   margin: 49px 64px;
 }
 

@@ -3,6 +3,10 @@
     background-color: rgb(7, 63, 82);
   }
 
+  nav {
+    margin: 49px 0px;
+  }
+
   nav>a {
     display: none;
   }
@@ -11,11 +15,6 @@
     text-align: center;
     margin-left: 80px;
     gap: 50px;
-  }
-
-  .workout .img {
-    position: relative;
-    left: 100px;
   }
 
   section.time-to-start {
@@ -28,22 +27,42 @@
     text-align: center;
   }
 
-  .time-to-start>p {
-    text-align: center;
+  .workout {
+    margin-top: 90px;
+  }
+
+  .workout .img {
+    position: relative;
+    left: 42px;
   }
 
   .workout h1 {
     font-size: 65px;
     width: 700px;
+    margin-left: -60px;
+  }
+
+  .workout p {
+    margin-top: 0px;
+    margin-left: -30px;
+    text-align: center;
   }
 
   .workout .orange {
-    transform: translateX(180%);
+    transform: translateX(12%);
+    margin-bottom: 70px;
+    padding: 15px 125px;
+    width: 410px;
+  }
+
+  section.logo {
+    margin-left: -55px;
   }
 
   .benefit {
-    margin: 80px 0px;
+    margin: 80px 0px 80px -40px;
     gap: 60px;
+
   }
 
   .benefit .workout-at-home {
@@ -65,6 +84,13 @@
     width: 250%;
   }
 
+  .time-to-start>p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 55px;
+    width: 680px;
+  }
+
   .time-to-start .list-program .end {
     display: none;
   }
@@ -78,6 +104,19 @@
   .time-to-start .list-program {
     display: grid;
     justify-content: center;
+    margin-left: 70px;
+  }
+
+  .membership {
+    margin: 11px 0px 36px -55px;
+  }
+
+  .membership>h2 {
+    margin-left: 190px;
+  }
+
+  .membership .line {
+    margin-left: 240px;
   }
 
   .membership .list-select {
