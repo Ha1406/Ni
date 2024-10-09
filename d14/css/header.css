@@ -1,0 +1,55 @@
+header {
+  margin-top: 41px;
+  font-family: Poppins;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: space-around;
+}
+
+header nav a img {
+  width: 90.81px;
+  height: 60px;
+}
+
+header .menu {
+  display: flex;
+  gap: 33px;
+}
+
+header ul.menu li.active {
+  position: relative;
+}
+
+header ul.menu li.active::after {
+  position: absolute;
+  bottom: -5px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: #B00000;
+  content: "";
+}
+
+header nav ul.login {
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul.login li.vertical {
+  width: 1px;
+  height: 19px;
+  background: #DAD8D8;
+}
+
+header nav ul.login li a i {
+  width: 16.57px;
+  height: 16.61px;
+  margin-right: 6px;
+  color: #B00000;
+}

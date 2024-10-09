@@ -1,0 +1,91 @@
+section.slider {
+  display: flex;
+  margin: 80px 112px;
+  gap: 55px;
+  justify-content: space-between;
+}
+
+section.slider div.content ul.select {
+  display: flex;
+  gap: 20px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+section.slider div.content ul.select::after {
+  width: 30%;
+  height: 1px;
+  background: #E5E5E5;
+  position: absolute;
+  content: '';
+  left: 9%;
+  bottom: -3px;
+}
+
+section.slider div.content ul.select li {
+  color: #D6D4D4E0;
+}
+
+section.slider div.content ul.select li.active {
+  color: #B00000;
+  position: relative;
+}
+
+section.slider div.content ul.select li.active::after {
+  width: 90%;
+  height: 1px;
+  content: '';
+  background: #B00000;
+  position: absolute;
+  left: 5%;
+  bottom: -3px;
+}
+
+section.slider div.content h1 {
+  font-family: Poppins;
+  font-size: 64px;
+  line-height: 77.5px;
+  margin-bottom: 34px;
+  color: #2E2E2E;
+}
+
+section.slider div.content p {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  margin-bottom: 60px;
+}
+
+section.slider div.content div.button {
+  display: flex;
+  gap: 24px;
+}
+
+section.slider div.content div.button button.red {
+  padding: 12px 13px;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background: #B00000;
+}
+
+section.slider div.content div.button button.white {
+  padding: 12px 18px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background: white;
+}
+
+section.slider div.content img {
+  height: 504px;
+}

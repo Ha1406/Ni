@@ -5,52 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="img">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <ul class="menu">
-    <img src="img/1.png" alt="logo">
-    <li><a href="">Our Services</a></li>
-    <li> <a href="">About</a></li>
-    <li><a href="">Blog&News</a></li>
-    <li><a href="">Contact</a></li>
-    <li><a href="">Account</a></li>
-    <li><a href=""><i class="fa-solid fa-phone"></i>+2349067322844</a></li>
-  </ul>
-  <div class="title">
-    <ul class="select">
-      <li class="red">Hosting</li>
-      <li>Domain</li>
-      <li>SEO </li>
-      <li>Email</li>
-    </ul>
-    <h1>Premium Web Hosting for Your Website</h1>
-    <p>Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support.</p>
-    <button class="red">Create an Account</button>
-    <button>Choose your plan</button>
-  </div>
-  <div class="img">
+  <header>
+    <nav>
+      <a class="logo"> <img src="img/1.png" alt="logo"></a>
+      <ul class="menu">
+        <li><a href="">Our Services</a></li>
+        <li><a href="">About</a></li>
+        <li class="active"><a href="">Blog&News</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <ul class="login">
+        <li><a href="account">Account</a></li>
+        <li class="vertical"></li>
+        <li><a href=""><i class="fa-solid fa-phone"></i>+2349067322844</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="slider">
+    <div class="content">
+      <ul class="select">
+        <li class="active">Hosting</li>
+        <li>Domain</li>
+        <li>SEO </li>
+        <li>Email</li>
+      </ul>
+      <h1>Premium Web Hosting for Your Website</h1>
+      <p>Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support.</p>
+      <div class="button">
+        <button class="red">Create an Account</button>
+        <button class="white">Choose your plan</button>
+      </div>
+    </div>
     <img src="img/2.png" alt="women">
-  </div>
-  <div class="True Cloud Web  Hosting">
-    <h2>True Cloud Web Hosting</h2>
-    <p>
-      True Cloud Web Hosting All of the hosting packages we offer are deployed instantly on our SSD powered cloud. We
-      don't use dedicated servers that operate on single pieces of hardware. Our entire infrastructure is built to be
-      reliable, secure, and scalable.
-    </p>
-  </div>
-  <div class="logo">
-    <img src="img/panel.png" alt="">
-    <img src="img/secure.png" alt="">
-    <img src="img/litespeed-logo 1.png" alt="">
-    <img src="img/softacu.png" alt="">
-    <img src="img/word.png" alt="">
-    <img src="img/cloud.png" alt="">
-  </div>
+  </section>
+
+
+  <section class="Why-us">
+    <div class="True Cloud Web Hosting">
+      <h2>True Cloud Web Hosting</h2>
+      <p>
+        True Cloud Web Hosting All of the hosting packages we offer are deployed instantly on our SSD powered cloud. We
+        don't use dedicated servers that operate on single pieces of hardware. Our entire infrastructure is built to be
+        reliable, secure, and scalable.
+      </p>
+    </div>
+    <div class="logo">
+      <a href=""> <img src="img/panel.png" alt=""></a>
+      <a href=""> <img src="img/secure.png" alt=""></a>
+      <a href=""> <img src="img/litespeed-logo 1.png" alt=""></a>
+      <a href=""> <img src="img/softacu.png" alt=""></a>
+      <a href=""> <img src="img/word.png" alt=""></a>
+      <a href=""> <img src="img/cloud.png" alt=""></a>
+    </div>
+  </section>
   <div class="list-benefit">
     <div class="benefit">
       <img src="img/icn1 1.png" alt="">
@@ -77,78 +94,83 @@
         Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
     </div>
   </div>
-  <div class="ready-to-start">
-    <h2>Ready to get started with Lemon Wares?</h2>
-    <span>Choose the package that suits you</span>
-    <div class="date">
-      <span>Monthly</span>
-      <button class="radius">
-        <div class="circle"></div>
-      </button>
-      <span>Yearly</span>
-      <div>20% discount</div>
+  <section class="ready-to-start">
+    <div class="Choose-the-package">
+      <h2>Ready to get started with Lemon Wares?</h2>
+      <p>Choose the package that suits you</p>
+      <div class="date">
+        <span>Monthly</span>
+        <input type="text">
+        <span>Yearly</span>
+        <span>20% discount</span>
+      </div>
+      <ul class="basic-pre">
+        <li><span>Basic</span></li>
+        <li><span>Premium</span></li>
+      </ul>
     </div>
-    <ul class="basic-pre">
-      <span>Basic</span>
-      <span>Premium</span>
-    </ul>
     <div class="line-red"></div>
     <div class="line"></div>
-    <div class="value">
-      <h4>Starter</h4>
-      <p>with all your customers via all conversation channels in one central dashboard.</p>
-      <h3>$2.80</h3>
-      <span>Per month</span>
-      <button>Choose this Plan</button>
-      <ul>
-        <li>2GB SSD</li>
-        <li>10GB Bandwidth</li>
-        <li>15 Email Accounts</li>
-        <li>Unlimited Database</li>
-        <li>4 Subdomains</li>
-        <li>1 Parked Domain</li>
-        <li>2 Websites</li>
-        <li>Free SSL</li>
-        <li>Softaculous</li>
-      </ul>
+    <div class="list-value">
+      <div class="value">
+        <h4>Starter</h4>
+        <p>with all your customers via all conversation channels in one central dashboard.</p>
+        <h3>$2.80</h3>
+        <span>Per month</span>
+        <button>Choose this Plan</button>
+        <ul>
+          <li>2GB SSD</li>
+          <li>10GB Bandwidth</li>
+          <li>15 Email Accounts</li>
+          <li>Unlimited Database</li>
+          <li>4 Subdomains</li>
+          <li>1 Parked Domain</li>
+          <li>2 Websites</li>
+          <li>Free SSL</li>
+          <li>Softaculous</li>
+        </ul>
+      </div>
+      <div class="value">
+        <h4>Standard</h4>
+        <p>with all your customers via all conversation channels in one central dashboard.</p>
+        <h3>$4.20</h3>
+        <span>Per month</span>
+        <button>Choose this Plan</button>
+        <ul>
+          <li>2GB SSD</li>
+          <li>10GB Bandwidth</li>
+          <li>15 Email Accounts</li>
+          <li>Unlimited Database</li>
+          <li>4 Subdomains</li>
+          <li>1 Parked Domain</li>
+          <li>2 Websites</li>
+          <li>Free SSL</li>
+          <li>Softaculous</li>
+        </ul>
+      </div>
+      <div class="value">
+        <h4>Suprem</h4>
+        <p>with all your customers via all conversation channels in one central dashboard.</p>
+        <h3>$7.00</h3>
+        <span>Per month</span>
+        <button>Choose this Plan</button>
+        <ul>
+          <li>2GB SSD</li>
+          <li>10GB Bandwidth</li>
+          <li>15 Email Accounts</li>
+          <li>Unlimited Database</li>
+          <li>4 Subdomains</li>
+          <li>1 Parked Domain</li>
+          <li>2 Websites</li>
+          <li>Free SSL</li>
+          <li>Softaculous</li>
+        </ul>
+      </div>
     </div>
-    <div class="value">
-      <h4>Standard</h4>
-      <p>with all your customers via all conversation channels in one central dashboard.</p>
-      <h3>$4.20</h3>
-      <span>Per month</span>
-      <button>Choose this Plan</button>
-      <ul>
-        <li>2GB SSD</li>
-        <li>10GB Bandwidth</li>
-        <li>15 Email Accounts</li>
-        <li>Unlimited Database</li>
-        <li>4 Subdomains</li>
-        <li>1 Parked Domain</li>
-        <li>2 Websites</li>
-        <li>Free SSL</li>
-        <li>Softaculous</li>
-      </ul>
-    </div>
-    <div class="value">
-      <h4>Suprem</h4>
-      <p>with all your customers via all conversation channels in one central dashboard.</p>
-      <h3>$7.00</h3>
-      <span>Per month</span>
-      <button>Choose this Plan</button>
-      <ul>
-        <li>2GB SSD</li>
-        <li>10GB Bandwidth</li>
-        <li>15 Email Accounts</li>
-        <li>Unlimited Database</li>
-        <li>4 Subdomains</li>
-        <li>1 Parked Domain</li>
-        <li>2 Websites</li>
-        <li>Free SSL</li>
-        <li>Softaculous</li>
-      </ul>
-    </div>
-  </div>
+  </section>
+
+
+
   <div class="Real-Stories">
     <img src="img/Quote Mark.png" alt="">
     <h2>Real Stories from Real Customers</h2>
