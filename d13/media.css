@@ -3,17 +3,13 @@
     background-color: rgb(7, 63, 82);
   }
 
-  nav {
-    margin: 49px 0px;
-  }
-
   nav>a {
     display: none;
   }
 
   nav ul {
     text-align: center;
-    margin-left: 80px;
+    margin: 0px 55px;
     gap: 50px;
   }
 
@@ -33,34 +29,39 @@
 
   .workout .img {
     position: relative;
-    left: 42px;
+    left: 85px;
   }
 
   .workout h1 {
     font-size: 65px;
     width: 700px;
     margin-left: -60px;
+    text-align: center;
   }
 
   .workout p {
     margin-top: 0px;
-    margin-left: -30px;
     text-align: center;
+    width: 420%;
+  }
+
+  .workout span.feature {
+    margin-left: -20px;
   }
 
   .workout .orange {
-    transform: translateX(12%);
+    transform: translateX(20%);
     margin-bottom: 70px;
     padding: 15px 125px;
     width: 410px;
   }
 
   section.logo {
-    margin-left: -55px;
+    margin-left: -22px;
   }
 
   .benefit {
-    margin: 80px 0px 80px -40px;
+    margin: 80px 0px 80px 0px;
     gap: 60px;
 
   }
@@ -88,7 +89,7 @@
     text-align: center;
     margin-bottom: 30px;
     margin-left: 55px;
-    width: 680px;
+    width: 90%;
   }
 
   .time-to-start .list-program .end {
@@ -97,14 +98,11 @@
 
   .time-to-start .list-program .program {
     padding: 20px 20px;
-    width: 100%;
-    height: 100%;
   }
 
   .time-to-start .list-program {
-    display: grid;
     justify-content: center;
-    margin-left: 70px;
+    flex-wrap: wrap;
   }
 
   .membership {
@@ -112,11 +110,11 @@
   }
 
   .membership>h2 {
-    margin-left: 190px;
+    transform: translateX(115%);
   }
 
   .membership .line {
-    margin-left: 240px;
+    width: 690px;
   }
 
   .membership .list-select {
@@ -124,7 +122,7 @@
   }
 
   .membership .list-select .select {
-    width: 220%;
+    width: 690px;
   }
 
   .membership .list-select .select .select-one {

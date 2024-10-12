@@ -36,6 +36,8 @@ a {
 nav {
   font-family: Inter;
   margin: 49px 64px;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav>a {
@@ -178,7 +180,7 @@ nav ul li a {
   margin-top: 46px;
   margin-bottom: 50px;
   color: #EFEDE8A6;
-  width: 560px;
+  width: 58%;
 }
 
 .workout .orange {
@@ -192,7 +194,7 @@ nav ul li a {
   letter-spacing: 1px;
   margin-bottom: 112px;
   display: flex;
-  flex: 1;
+  border: none;
 }
 
 .workout span.feature {
@@ -235,7 +237,6 @@ section.time-to-start {
   padding: 52.5px 40px;
   margin-bottom: 20px;
   width: 304px;
-  height: 190px;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -249,6 +250,7 @@ section.time-to-start {
 
 .time-to-start .list-program .program .arrow {
   display: flex;
+  align-items: center;
 }
 
 .time-to-start .list-program .program .arrow p {
