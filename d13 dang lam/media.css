@@ -1,0 +1,262 @@
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: rgb(7, 63, 82);
+  }
+
+  nav {
+    margin: 10px 30px;
+
+  }
+
+  nav>a {
+    display: none;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  section.time-to-start {
+    margin: 50px 10px;
+    text-align: center;
+  }
+
+  .time-to-start h2 {
+    font-size: 27px;
+
+  }
+
+  .workout {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .workout .img {
+    position: relative;
+    right: 0px;
+  }
+
+  .workout .img img {
+    width: 100%;
+    /* margin-left: 250px; */
+  }
+
+  .workout .img .box-1 {
+    padding: 8px 10px;
+    top: 70px;
+    right: 25px;
+  }
+
+  .workout .img .box-1 .number-1 {
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  .workout .img .box-1 i {
+    margin: 0px;
+  }
+
+  .workout .img .box-1 .parameter-1 {
+    font-size: 10px;
+  }
+
+  .workout .img .box-2 {
+    padding: 8px 10px;
+    bottom: 45px;
+    left: 20px;
+  }
+
+  .workout .img .box-2 .radius {}
+
+  .workout .img .box-2 .radius i {
+    transform: translate(25%, 75%);
+  }
+
+  .workout .img .box-2 .right {
+    gap: 10px;
+  }
+
+  .workout .img .box-3 {
+    padding: 8px 10px;
+    left: 170px;
+    bottom: 200px;
+  }
+
+  .workout .img .box-3 .number-3 {
+    font-size: 25px;
+  }
+
+  .workout h1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  .workout p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .workout span.feature {
+    display: inline-block;
+    font-size: 22px;
+  }
+
+  .workout .orange {
+    margin-bottom: 30px;
+    padding: 10px 65px;
+    font-size: 15px;
+    display: inline-block;
+  }
+
+  section {
+    padding: 0px 20px;
+  }
+
+  section.logo {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  section.logo a {
+    width: calc((100% - 20px)/2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  section.logo a:nth-child(even) {
+    margin-right: 0px;
+  }
+
+  section.logo a img {
+    max-width: 100%;
+  }
+
+
+  .benefit {
+    margin: 0px;
+    gap: 30px;
+
+  }
+
+  .benefit .workout-at-home {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .benefit .workout-at-home .content {
+    text-align: center;
+    width: 100%;
+  }
+
+  .benefit .workout-at-home .content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .benefit .workout-at-home .content-a {
+    margin: 0px;
+  }
+
+  .benefit .workout-at-home .content-b {
+    margin: 0px;
+  }
+
+  .benefit .workout-at-home .content p {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .benefit .workout-at-home .content a {
+    font-size: 20px;
+  }
+
+  .benefit .workout-at-home img {
+    width: 100%;
+  }
+
+  .time-to-start>p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .time-to-start .list-program .end {
+    display: none;
+  }
+
+  .time-to-start .list-program .program {
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  .time-to-start .list-program .program h5 {
+    font-size: 20px;
+  }
+
+  .time-to-start .list-program .program .arrow p {
+    font-size: 15px;
+    text-align: center;
+    line-height: normal;
+  }
+
+  .time-to-start .list-program {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .membership {
+    margin: 33px 0px 36px 0px;
+  }
+
+  .membership>h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .membership .line {
+    width: 100%;
+  }
+
+  .membership .list-select {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .membership .list-select .select {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .membership .list-select .select h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .membership .list-select .select ul {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .membership .list-select .select .select-one {
+    margin-bottom: 10px;
+  }
+
+  .membership .list-select .select .select-two {
+    margin-bottom: 15px;
+  }
+
+  button.white {
+    font-size: 12px;
+    right: 20px;
+  }
+}

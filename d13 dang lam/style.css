@@ -1,0 +1,397 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #171717;
+  color: #fff;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #FAFAF9;
+}
+
+section {
+  padding: 0px 144px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: Inter;
+  margin: 49px 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav>a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FAFAF9;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  align-items: center;
+}
+
+nav ul li a {
+  font-size: 12px;
+  color: #FAFAF9;
+}
+
+.workout h1 {
+  font-size: 172px;
+  line-height: 170px;
+  color: #FAFAF9;
+  font-family: Inter;
+}
+
+.workout {
+  margin-top: 180px;
+  position: relative;
+}
+
+.workout .img {
+  position: absolute;
+  right: 171px;
+}
+
+.workout .img .box-1 {
+  background: #EF8964;
+  position: absolute;
+  border-radius: 12px;
+  top: -26px;
+  right: -63px;
+  padding: 16px 20px;
+}
+
+.workout .img .box-1 i {
+  margin-bottom: 8px;
+}
+
+.workout .img .box-1 .number-1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.workout .img .box-1 .parameter-1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.workout .img .box-2 {
+  background: #303030;
+  border-radius: 12px;
+  padding: 20px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 225px;
+  left: -123px;
+  gap: 10px;
+}
+
+.workout .img .box-2 .radius {
+  width: 40px;
+  height: 40px;
+  background: #EF8963;
+  border-radius: 50%;
+}
+
+.workout .img .box-2 .radius i {
+  transform: translate(130%, 70%);
+}
+
+.workout .img .box-2 .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.workout .img .box-2 .number-2 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FAFAF9;
+}
+
+.workout .img .box-2 .parameter-2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #EFEDE8A6;
+}
+
+.workout .img .box-3 {
+  border-radius: 12px;
+  background: #7A29DC;
+  padding: 16px 23px;
+  position: absolute;
+  bottom: 123px;
+  left: 347px;
+}
+
+.workout .img .box-3 .number-3 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FAFAF9;
+}
+
+.workout .img .box-3 .parameter-3 {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  color: #EFEDE8A6;
+}
+
+.workout p {
+  font-family: Inter;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: 46px;
+  margin-bottom: 50px;
+  color: #EFEDE8A6;
+  width: 58%;
+}
+
+.workout .orange {
+  cursor: pointer;
+  padding: 24px 25px;
+  border-radius: 10px;
+  background: #E6533C;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 112px;
+  display: flex;
+  border: none;
+}
+
+.workout span.feature {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #EFEDE8A6;
+}
+
+section.logo {
+  margin-top: 33px;
+  display: flex;
+  gap: 18px;
+}
+
+section.time-to-start {
+  margin-top: 200px;
+}
+
+.time-to-start h2 {
+  margin-bottom: 24px;
+}
+
+.time-to-start>p {
+  font-family: Inter;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #EFEDE8A6;
+  margin-bottom: 50px;
+}
+
+.time-to-start .list-program {
+  display: flex;
+  gap: 32px;
+}
+
+.time-to-start .list-program .program {
+  background: #323443;
+  padding: 52.5px 40px;
+  margin-bottom: 20px;
+  width: 20%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.time-to-start .list-program .program h5 {
+  margin-bottom: 12px;
+  font-family: Inter;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.time-to-start .list-program .program .arrow {
+  display: flex;
+  align-items: center;
+}
+
+.time-to-start .list-program .program .arrow p {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #EFEDE8A6;
+}
+
+.time-to-start .list-program .program .arrow a {
+  color: #FAFAF9;
+}
+
+.benefit {
+  margin: 189px 0px;
+  display: grid;
+  gap: 121px;
+}
+
+.benefit .workout-at-home {
+  display: flex;
+  align-items: center;
+}
+
+.benefit .workout-at-home .content-a {
+  margin-right: 112px;
+}
+
+.benefit .workout-at-home .content-b {
+  margin-left: 89px;
+}
+
+.benefit .workout-at-home .content h2 {
+  margin-bottom: 38px;
+}
+
+.benefit .workout-at-home .content p {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #EFEDE8A6;
+  margin-bottom: 24px;
+}
+
+a {
+  font-family: Inter;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #0070C9;
+}
+
+a i {
+  color: #FAFAF9;
+  margin-left: 8px;
+}
+
+.benefit .workout-at-home img.yoga {
+  width: 100%;
+}
+
+.benefit .workout-at-home img.calisthenic {
+  width: 100%;
+}
+
+.membership {
+  margin: 11px 0px 36px 0px;
+}
+
+.membership h2 {
+  margin-bottom: 12px;
+}
+
+.membership .line {
+  background: #FFFFFF;
+  width: 100%;
+  height: 2px;
+  border: 0.5px;
+  margin-bottom: 32px;
+  opacity: 40%;
+}
+
+.membership .list-select {
+  display: flex;
+  gap: 69px;
+}
+
+.membership .list-select .select {
+  background: #232532;
+  padding: 71px 68px;
+}
+
+.membership .list-select .select h2 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 34px;
+  color: #FAFAF9;
+}
+
+.membership .list-select .select p {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  color: #EFEDE8A6;
+}
+
+.membership .list-select .select ul {
+  padding-left: 20px;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #EFEDE8A6;
+}
+
+.membership .list-select .select .blue {
+  padding: 4px 14px 4px 14px;
+  border-radius: 10px;
+  background: #0070C9;
+  border: none;
+  color: #FAFAF9;
+  cursor: pointer;
+}
+
+.membership .list-select .select .select {
+  background: brown;
+}
+
+.membership .list-select .select .select-one {
+  margin-bottom: 102px;
+}
+
+.membership .list-select .select .select-two {
+  margin-bottom: 28px;
+}
+
+button.white {
+  padding: 7px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #303030;
+  position: fixed;
+  bottom: 27px;
+  right: 64px;
+  cursor: pointer;
+}
+
+button.white i {
+  color: #2E3A59;
+}
