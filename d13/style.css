@@ -21,14 +21,6 @@ section {
   padding: 0px 144px;
 }
 
-.pd64 {
-  padding: 0px 64px;
-}
-
-.pd144 {
-  padding: 0px 144px;
-}
-
 a {
   text-decoration: none;
 }
@@ -78,8 +70,6 @@ nav ul li a {
 .workout .img .box-1 {
   background: #EF8964;
   position: absolute;
-  width: 180px;
-  height: 110px;
   border-radius: 12px;
   top: -26px;
   right: -63px;
@@ -105,8 +95,6 @@ nav ul li a {
 
 .workout .img .box-2 {
   background: #303030;
-  width: 206px;
-  height: 96px;
   border-radius: 12px;
   padding: 20px 23px;
   display: flex;
@@ -115,6 +103,7 @@ nav ul li a {
   position: absolute;
   bottom: 225px;
   left: -123px;
+  gap: 10px;
 }
 
 .workout .img .box-2 .radius {
@@ -129,7 +118,8 @@ nav ul li a {
 }
 
 .workout .img .box-2 .right {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .workout .img .box-2 .number-2 {
@@ -148,15 +138,12 @@ nav ul li a {
 }
 
 .workout .img .box-3 {
-  width: 193px;
-  height: 98px;
   border-radius: 12px;
   background: #7A29DC;
   padding: 16px 23px;
-  margin-left: 220px;
   position: absolute;
   bottom: 123px;
-  left: 127px;
+  left: 347px;
 }
 
 .workout .img .box-3 .number-3 {
@@ -236,7 +223,7 @@ section.time-to-start {
   background: #323443;
   padding: 52.5px 40px;
   margin-bottom: 20px;
-  width: 304px;
+  width: 20%;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -378,6 +365,7 @@ a i {
   background: #0070C9;
   border: none;
   color: #FAFAF9;
+  cursor: pointer;
 }
 
 .membership .list-select .select .select {
