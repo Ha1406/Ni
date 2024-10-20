@@ -341,22 +341,23 @@ a i {
   color: #FAFAF9;
 }
 
-.membership .list-select .select p {
+.membership .list-select .select {
   font-family: Inter;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.5px;
-  margin-bottom: 16px;
   color: #EFEDE8A6;
 }
 
-.membership .list-select .select ul {
+.membership .list-select .select p {
+  margin-bottom: 16px;
+  min-height: 18%;
+  max-height: 40%;
+}
+
+.membership .list-select div.select ul {
   padding-left: 20px;
-  font-family: Inter;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #EFEDE8A6;
+  min-height: 68%;
 }
 
 .membership .list-select .select .blue {
@@ -366,18 +367,6 @@ a i {
   border: none;
   color: #FAFAF9;
   cursor: pointer;
-}
-
-.membership .list-select .select .select {
-  background: brown;
-}
-
-.membership .list-select .select .select-one {
-  margin-bottom: 102px;
-}
-
-.membership .list-select .select .select-two {
-  margin-bottom: 28px;
 }
 
 button.white {
