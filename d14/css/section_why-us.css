@@ -1,0 +1,67 @@
+section.Why-us {
+  margin-bottom: 133px;
+}
+
+section.Why-us div.top div.Hosting {
+  color: #18191F;
+  font-family: Inter;
+}
+
+section.Why-us div.top div.Hosting h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+section.Why-us div.top div.Hosting p {
+  font-size: 18px;
+  line-height: 32px;
+  width: 70%;
+}
+
+section.Why-us div.top {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+section.Why-us div.top div.logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.Why-us div.top div.logo a {
+  width: 20%;
+}
+
+section.Why-us div.list-benefit {
+  display: flex;
+  gap: 53px;
+  color: #000;
+  font-family: Poppins;
+  justify-content: space-around;
+}
+
+section.Why-us div.list-benefit div.benefit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+section.Why-us div.list-benefit div.benefit img {
+  width: 100px;
+  height: 100px;
+}
+
+section.Why-us div.list-benefit div.benefit div.text h4 {
+  font-size: 20px;
+}
+
+section.Why-us div.list-benefit div.benefit div.text p {
+  font-size: 12px;
+  font-weight: 300;
+}

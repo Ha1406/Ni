@@ -1,0 +1,41 @@
+footer {
+  background: #B00000;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  font-size: 16px;
+  font-family: Inter;
+}
+
+footer div.hosting {
+  display: flex;
+  gap: 120px;
+  color: #E6E6E6;
+}
+
+footer div.hosting span {
+  color: #ffff;
+  font-weight: 700;
+}
+
+footer div.hosting ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer div.hosting ul li {
+  cursor: pointer;
+}
+
+footer div.hosting p {
+  width: 400px;
+}
+
+footer div.hosting div.text img {
+  margin-bottom: 20px;
+}
+
+footer>p {
+  color: #FFFFFF;
+  margin-top: 100px;
+}
