@@ -1,0 +1,161 @@
+section.testimonials {
+  margin: 105px 0px;
+  font-family: Inter;
+}
+
+section.testimonials div.Real-Stories {
+  padding: 0px 100px;
+}
+
+section.testimonials div.Real-Stories h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  color: #18191F;
+}
+
+section.testimonials div.Real-Stories>img {
+  width: 10%;
+}
+
+section.testimonials div.Real-Stories>span {
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191F;
+  margin-right: 30px;
+}
+
+section.testimonials div.Real-Stories p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+section.testimonials div.Real-Stories span.name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #18191F;
+}
+
+section.testimonials div.Real-Stories span.address {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #969BAB;
+}
+
+section.testimonials div.Real-Stories div.Crypto {
+  background: yellow;
+  padding-top: 7px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 96px;
+  margin-top: 24px;
+  width: 350px;
+}
+
+section.testimonials div.Real-Stories div.Crypto>img {
+  width: 120px;
+  height: 120px;
+}
+
+section.testimonials div.Real-Stories div.Crypto div.content {
+  display: flex;
+  gap: 16px;
+}
+
+section.testimonials div.Real-Stories div.Crypto div.content img {
+  width: 15.93px;
+  height: 14px;
+}
+
+section.testimonials div.Real-Stories div.Crypto div.content div.format {}
+
+section.testimonials div.Real-Stories div.Crypto div.content div.format div.personal-information {}
+
+/* 
+      <div class="Real-Stories">
+
+      <div class="Crypto">
+        <img src="img/Crypto-Learn-Invest-bw-oyl3g9g1y9n29md6xkfxpgebbw87gdfbb0h0u1ci68 2.png" alt="">
+
+        <div class="content">
+          <img src="img/Quote Mark.png" alt="">
+
+          <div class="format">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+              lectus
+              magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elem</p>
+            <div class="personal-information">
+              <span class="name">Floyd Miles</span>
+              <span class="address">Vice President, CLI</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="Jerry">
+        <img src="img/Jerry-Piping-bw-oyl3forlrwur6778abi56lm69f24r157w64c9y75z4 2.png" alt="">
+        <div class="content">
+          <img src="img/Quote Mark.png" alt="">
+          <div class="format">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+              lectus
+              magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elem</p>
+            <div class="personal-information">
+              <span class="name">Jane Cooper</span>
+              <span class="address">CEO, JPNL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="LeeveOn">
+        <img src="img/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 2.png" alt="">
+        <div class="content">
+          <img src="img/Quote Mark.png" alt="">
+          <div class="format">
+            <p>LemonWares saved our time in Hosting my company page.</p>
+            <div class="personal-information">
+              <span class="name">Kristin Watson</span>
+              <span class="address">Co-Founder, LeeveOn Branding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ */
+
+section.testimonials div.web {
+  display: flex;
+  margin-top: 84px;
+  gap: 260px;
+}
+
+section.testimonials div.web div.text {
+  font-family: Inter;
+  color: #18191F;
+}
+
+section.testimonials div.web div.text h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+}
+
+section.testimonials div.web div.text p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+section.testimonials div.web div.list-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+}
+
+section.testimonials div.web div.list-logo img {
+  width: 20%;
+}

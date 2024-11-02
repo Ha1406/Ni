@@ -1,0 +1,199 @@
+section.Ready {
+  font-family: Poppins;
+}
+
+section.Ready div.Choose {
+  color: #000;
+  text-align: center;
+}
+
+section.Ready div.Choose h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 38px;
+}
+
+section.Ready div.Choose p {
+  font-size: 25px;
+}
+
+section.Ready div.Choose div.date {
+  display: flex;
+  margin: 60px 0px;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+
+section.Ready div.Choose div.date span {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+section.Ready div.Choose div.date span.discount {
+  background: #FFE87A;
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 24px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider1 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #B00000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider1:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider1 {
+  background-color: #2196F3;
+  content: attr(data-on);
+}
+
+input:focus+.slider1 {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider1:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider1.round {
+  border-radius: 34px;
+}
+
+.slider1.round:before {
+  border-radius: 50%;
+}
+
+section.Ready div.Choose ul.basic-pre {
+  display: flex;
+  justify-content: center;
+  gap: 332px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+section.Ready div.Choose ul.basic-pre li {
+  position: relative;
+  cursor: pointer;
+}
+
+section.Ready div.Choose ul.basic-pre li.pre::after {
+  background: #C4C4C4;
+  width: 443px;
+  height: 4px;
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: -110%;
+}
+
+section.Ready div.Choose ul.basic-pre li.basic::after {
+  background: #B00000;
+  width: 443px;
+  height: 4px;
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: -220%;
+}
+
+section.Ready div.list-value {
+  display: flex;
+  margin-top: 85px;
+  gap: 100px;
+}
+
+section.Ready div.list-value div.value {
+  background: #FFFFFF;
+  border: 1.5px solid #C4C4C4;
+  border-radius: 15px;
+  padding: 34px;
+  color: #000;
+  font-family: Poppins;
+}
+
+section.Ready div.list-value div.value h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+section.Ready div.list-value div.value p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 28px;
+}
+
+section.Ready div.list-value div.value h3 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 11px;
+}
+
+section.Ready div.list-value div.value span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+section.Ready div.list-value div.value button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 55px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  background: #FFFFFF;
+  margin: 35px 0px;
+  cursor: pointer;
+}
+
+section.Ready div.list-value div.value ul {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #808080;
+}
+
+section.Ready div.list-value div.value ul li::before {
+  content: "✓";
+  padding-right: 20px;
+  color: #000;
+}

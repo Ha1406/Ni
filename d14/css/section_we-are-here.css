@@ -1,0 +1,31 @@
+section.we-are-here {
+  background: #F7FAFE;
+  border-radius: 16px;
+  font-family: Poppins;
+  padding: 85px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 110px;
+}
+
+section.we-are-here h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 88px;
+  text-align: center;
+  color: #2E2E2E;
+}
+
+section.we-are-here button {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #B00000;
+  font-size: 14px;
+  color: #ffff;
+  cursor: pointer;
+  display: flex;
+  gap: 9px;
+}
