@@ -95,27 +95,6 @@ section.testimonials div.Real-Stories div.LeeveOn {
   box-shadow: 0px 0px 8px 5px #29292A12;
 }
 
-
-
-/* 
-      <div class="Real-Stories">
-
-      <div class="LeeveOn">
-        <img src="img/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 2.png" alt="">
-        <div class="content">
-          <img src="img/Quote Mark.png" alt="">
-          <div class="format">
-            <p>LemonWares saved our time in Hosting my company page.</p>
-            <div class="personal-information">
-              <span class="name">Kristin Watson</span>
-              <span class="address">Co-Founder, LeeveOn Branding</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
- */
-
 section.testimonials div.web {
   display: flex;
   margin-top: 84px;
