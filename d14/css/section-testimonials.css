@@ -58,18 +58,16 @@ section.testimonials div.Real-Stories div.content img {
 section.testimonials div.Real-Stories div.list-content {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 section.testimonials div.Real-Stories div.Crypto {
   box-shadow: 0px 0px 8px 5px #29292A12;
-  padding-top: 7px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 96px;
+  padding: 7px 32px 96px 32px;
   margin-top: 24px;
   width: 350px;
   border-radius: 8px;
-  position: relative;
+  margin-left: 100px;
 }
 
 section.testimonials div.Real-Stories div.list-content div.right {
