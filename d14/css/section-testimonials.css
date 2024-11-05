@@ -46,72 +46,60 @@ section.testimonials div.Real-Stories span.address {
   color: #969BAB;
 }
 
+section.testimonials div.Real-Stories div.content {
+  display: flex;
+  gap: 16px;
+}
+
+section.testimonials div.Real-Stories div.content img {
+  height: 14px;
+}
+
+section.testimonials div.Real-Stories div.list-content {
+  display: flex;
+  gap: 30px;
+}
+
 section.testimonials div.Real-Stories div.Crypto {
-  background: yellow;
+  box-shadow: 0px 0px 8px 5px #29292A12;
   padding-top: 7px;
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 96px;
   margin-top: 24px;
   width: 350px;
+  border-radius: 8px;
+  position: relative;
 }
 
-section.testimonials div.Real-Stories div.Crypto>img {
-  width: 120px;
-  height: 120px;
-}
-
-section.testimonials div.Real-Stories div.Crypto div.content {
+section.testimonials div.Real-Stories div.list-content div.right {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 32px;
 }
 
-section.testimonials div.Real-Stories div.Crypto div.content img {
-  width: 15.93px;
-  height: 14px;
+section.testimonials div.Real-Stories div.Jerry {
+  padding: 39px 32px 14px 32px;
+  width: 445px;
+  box-shadow: 0px 0px 8px 5px #29292A12;
 }
 
-section.testimonials div.Real-Stories div.Crypto div.content div.format {}
+section.testimonials div.Real-Stories div.Jerry div.content {
+  margin-top: 15px;
+}
 
-section.testimonials div.Real-Stories div.Crypto div.content div.format div.personal-information {}
+
+section.testimonials div.Real-Stories div.LeeveOn {
+  padding: 41px 32px 32px 32px;
+  width: 350px;
+  box-shadow: 0px 0px 8px 5px #29292A12;
+}
+
+
 
 /* 
       <div class="Real-Stories">
 
-      <div class="Crypto">
-        <img src="img/Crypto-Learn-Invest-bw-oyl3g9g1y9n29md6xkfxpgebbw87gdfbb0h0u1ci68 2.png" alt="">
-
-        <div class="content">
-          <img src="img/Quote Mark.png" alt="">
-
-          <div class="format">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
-              lectus
-              magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elem</p>
-            <div class="personal-information">
-              <span class="name">Floyd Miles</span>
-              <span class="address">Vice President, CLI</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      <div class="Jerry">
-        <img src="img/Jerry-Piping-bw-oyl3forlrwur6778abi56lm69f24r157w64c9y75z4 2.png" alt="">
-        <div class="content">
-          <img src="img/Quote Mark.png" alt="">
-          <div class="format">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
-              lectus
-              magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elem</p>
-            <div class="personal-information">
-              <span class="name">Jane Cooper</span>
-              <span class="address">CEO, JPNL</span>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="LeeveOn">
         <img src="img/LeeveOn-Branding-bw-oyl3fl090kplvrcow9vmwmkbvvknw8qajniecucqo0 2.png" alt="">
         <div class="content">
