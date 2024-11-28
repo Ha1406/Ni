@@ -14,14 +14,20 @@
 <body>
   <div class="traffic-light">
     <div class="container">
-      <div class="red-light"></div>
-      <div class="yellow-light"></div>
-      <div class="green-light"></div>
+      <div class="red-light" id="red"></div>
+      <div class="yellow-light" id="yellow"></div>
+      <div class="green-light" id="green"></div>
       <div class="line"></div>
       <div class="count">15</div>
     </div>
     <div class="column"></div>
   </div>
+  <div class="button">
+    <button class="red-light" id="red-light" onclick="changeColor('red')">red</button>
+    <button class="yellow-light" id="yellow-light" onclick="changeColor('yellow')">yellow</button>
+    <button class="green-light" id="green-light" onclick="changeColor('green')">green</button>
+  </div>
+  <script src="traffic-light.js"></script>
 </body>
 
 </html>

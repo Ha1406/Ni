@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Roboto;
+}
+
 div.traffic-light div.container {
   background: rgb(95, 94, 94);
   width: 70px;
@@ -22,6 +26,7 @@ div.traffic-light div.container div.red-light {
   width: 30px;
   height: 30px;
   background: red;
+  background: gray;
   border-radius: 50%;
 }
 
@@ -29,6 +34,7 @@ div.traffic-light div.container div.yellow-light {
   width: 30px;
   height: 30px;
   background: yellow;
+  background: gray;
   border-radius: 50%;
 }
 
@@ -36,6 +42,7 @@ div.traffic-light div.container div.green-light {
   width: 30px;
   height: 30px;
   background: green;
+  background: gray;
   border-radius: 50%;
 }
 
@@ -47,14 +54,45 @@ div.traffic-light div.container div.line {
 
 div.traffic-light div.container div.count {
   color: white;
-  font-family: Roboto;
+
   font-size: 12px;
 }
 
 div.column {
-  background: rgb(62, 62, 62);
+  background: gray;
   width: 5px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
 }
+
+div.button {
+  text-align: center;
+  margin-top: 100px;
+}
+
+div.button button {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+div.button button.red-light {
+  background: gray;
+}
+
+div.button button.yellow-light {
+  background: gray;
+}
+
+div.button button.green-light {
+  background: gray;
+}
+
+/* 
+  <div class="button">
+    <button class="red-light"></button>
+    <button class="yellow-light"></button>
+    <button class="green-light"></button>
+  </div>
+ */
