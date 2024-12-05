@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #CFDBE4, #FFCED8, #DCF3FF)
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+div.all {
+  display: inline-flex;
+  padding: 50px 95px;
+  background-image: linear-gradient(to right, #fff 75%, #6DE1C2 75%);
+  border-radius: 50px;
+  gap: 64px;
+  margin: 200px;
+}
+
+div.login div.changecolor {
+  display: flex;
+  gap: 15px;
+}
+
+div.login div.changecolor h1 {
+  font-family: Montserrat;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+div.login div.changecolor h1.color {
+  color: #6DE1C2;
+}
+
+div.login p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  margin: 24px 0px;
+}
+
+div.login div.list-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: Inter;
+  margin-bottom: 20px;
+}
+
+div.login div.list-input input {
+  border: none;
+  border-bottom: 1px solid #737B7D;
+  padding: 14px 16px;
+}
+
+div.login div.list-input input.City {
+  width: 60%;
+}
+
+div.login div.list-input input.Postcode {
+  width: 40%;
+}
+
+div.login div.list-input div.row {
+  display: flex;
+  gap: 24px;
+}
+
+div.login span.file {
+  font-family: Inter;
+  font-size: 13px;
+  color: #8E8E8E;
+}
+
+div.login div.select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+div.login input.select {
+  margin: 20px 0px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+div.login label {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #383C3E;
+}
+
+div.login button {
+  width: 100%;
+  padding: 16px 0px;
+  border-radius: 10px;
+  background: #0982FE;
+  border: none;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+div.login ul {
+  display: flex;
+  font-family: Montserrat;
+  gap: 50px;
+  margin-top: 16px;
+}
+
+div.login ul li {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  letter-spacing: 0.02em;
+}
+
+div.login ul li div span {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #000;
+}
+
+div.login ul li div a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #DD5471;
+}
+
+div.login ul li div a.special {
+  text-decoration: underline;
+}
