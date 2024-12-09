@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="app-title">E-Reader</h1>
+    <div class="container">
+        <main>
+            <aside id="sidebar">
+                <div class="setting-item">
+                    <label for="">Cỡ chữ</label>
+                    <div>
+                        <button type="button" class="btn-font-size decrease" id="btnFontSizeDecrease"
+                            onclick="changeFontSize('-')">-</button>
+                        <button type="button" class="btn-font-size increase" id="btnFontSizeIncrease"
+                            onclick="changeFontSize('+')">+</button>
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label for="">Cách dòng (<span id="lineHeightDisplayValue">1.5</span>)</label>
+                    <input type="range" class="input-line-height" min="1" max="4" step="0.5" value="1.5"
+                        id="inputLineHeight">
+                </div>
+                <div class="setting-item">
+                    <label for="">Căn lề</label>
+                    <select class="slb-align" id="slbTextAlign">
+                        <option value="left" id="leftText">Trái</option>
+                        <option value="right" id="rightText">Phải</option>
+                        <option value="center" id="centerText">Giữa</option>
+                        <option value="justify" id="justifyText">Đều</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="">Màu nền</label>
+                    <div>
+                        <button class="btn-background btn-light" id="light"
+                            onclick="changeBackgroundColor(this)"></button>
+                        <button class="btn-background btn-gold" id="gold"
+                            onclick="changeBackgroundColor(this)"></button>
+                        <button class="btn-background btn-dark" id="dark"
+                            onclick="changeBackgroundColor(this)"></button>
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label for="">Màu chữ</label>
+                    <input type="color" class="input-color" id="inputColor" value="#292e33">
+                </div>
+            </aside>
+            <section id="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem dolorem itaque sunt! Veritatis
+                illo animi deserunt omnis, tempore aliquam deleniti non voluptates officiis dolores nemo! Ipsa dolorem
+                autem veniam consectetur odio delectus alias molestias qui beatae sunt tempore sit, ipsum vel, nihil
+                harum totam iusto repellat ratione exercitationem placeat repellendus. Commodi velit dicta labore
+                possimus, numquam dolorem quia, sunt illum ea nemo mollitia aliquam asperiores reprehenderit rem
+                assumenda sit voluptas neque iusto nihil, sequi laudantium. Vel quas voluptatum saepe exercitationem cum
+                sunt, dolore magni ipsa consectetur distinctio non voluptates optio impedit, minus ea quos laudantium!
+                Autem dolor fuga quidem?
+            </section>
+        </main>
+    </div>
+
+    <script src="change.js"></script>
+</body>
+
+</html>
