@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="./styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<!-- 
+Tạo giao diện như design (không cần css)
+Thư viện icon sử dụng fontawesome
+2 input
+tạo 5 dòng thể hiện 5 quy tắc kiểm tra mật khẩu (icon + text)
+-->
+
+<body>
+  <div class="form">
+    <span class="header">Thiết lập mật khẩu</span>
+    <div class="two-input">
+      <div class="pass">
+        <input type="password" placeholder="Mật khẩu" id="input-password-1"><i class="fa-solid fa-eye-slash"
+          id="icon-eye-1"></i>
+      </div>
+      <div class="pass">
+        <input type="password" placeholder="Xác nhận mật khẩu" id="input-password-2"><i class="fa-solid fa-eye-slash"
+          id="icon-eye-2"></i>
+      </div>
+    </div>
+    <div class="condition">
+      <span>Mật khẩu hợp lệ cần</span>
+      <div class="list">
+        <div class="condition-list">
+          <i class="fa-solid fa-circle-check" id="color"></i><span>Có từ 7 đến 20 ký tự</span>
+        </div>
+        <div class="condition-list">
+          <i class="fa-solid fa-circle-check" id="uppercase"></i><span>Bao gồm ký tự chữ hoa</span>
+        </div>
+        <div class="condition-list">
+          <i class="fa-solid fa-circle-check" id="lowercase"></i><span>Bao gồm ký tự chữ thường</span>
+        </div>
+        <div class="condition-list">
+          <i class="fa-solid fa-circle-check" id="number"></i><span>Bao gồm ký tự số</span>
+        </div>
+        <div class="condition-list">
+          <i class="fa-solid fa-circle-check" id="special"></i><span>Chứa ít nhất 1 ký tự đặc biệt !@#$%^&*()_+.,</span>
+        </div>
+      </div>
+      <button>Đồng ý</button>
+    </div>
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+  font-family: Be Vietnam Pro;
+}
+
+span.header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  background: #DD0071;
+  padding: 30px 75px;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #303030;
+  position: relative;
+  width: 100%;
+}
+
+div.pass i {
+  position: absolute;
+  left: 90%;
+  padding-top: 6%;
+}
+
+input:focus {
+  outline: none;
+}
+
+div.form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  margin: -100px 0 0 -100px;
+}
+
+div.two-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+div.pass input {
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+div.pass i {
+  cursor: pointer;
+}
+
+div.condition>span {
+  font-size: 16px;
+  color: #9BACBB;
+}
+
+div.list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-size: 16px;
+  color: #9BACBB;
+  margin-top: 13px;
+}
+
+div.condition-list {
+  display: flex;
+  gap: 10px;
+}
+
+div.condition-list i {
+  color: #9BACBB;
+}
+
+button {
+  background: #DD0071;
+  border: none;
+  padding: 17px 160px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 40px;
+  cursor: pointer;
+}
