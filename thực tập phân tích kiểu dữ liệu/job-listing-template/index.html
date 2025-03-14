@@ -44,68 +44,25 @@
         <div class="container-xl">
           <div class="row g-4">
             <div class="col-md-3">
-              <form action="./" method="get" autocomplete="off" novalidate class="sticky-top">
-                <div class="form-label">Job Types</div>
-                <div class="mb-4">
-                  <label class="form-check">
-                    <input type="checkbox" class="form-check-input" name="form-type[]" value="1" checked />
-                    <span class="form-check-label">Programming</span>
-                  </label>
-                  <label class="form-check">
-                    <input type="checkbox" class="form-check-input" name="form-type[]" value="2" checked />
-                    <span class="form-check-label">Design</span>
-                  </label>
-                  <label class="form-check">
-                    <input type="checkbox" class="form-check-input" name="form-type[]" value="3" />
-                    <span class="form-check-label">Management / Finance</span>
-                  </label>
-                  <label class="form-check">
-                    <input type="checkbox" class="form-check-input" name="form-type[]" value="4" />
-                    <span class="form-check-label">Customer Support</span>
-                  </label>
-                  <label class="form-check">
-                    <input type="checkbox" class="form-check-input" name="form-type[]" value="5" />
-                    <span class="form-check-label">Sales / Marketing</span>
-                  </label>
+              <div action="./" method="get" autocomplete="off" novalidate class="sticky-top">
+                <div class="form-label">Search By Name Of Jobs</div>
+                <input type="text" class="form-control mb-3" id="inputSearch">
+                <div class="form-label">Category</div>
+                <div class="mb-4" id="filterJobTypes">
                 </div>
-                <div class="form-label">Remote</div>
-                <div class="mb-4">
-                  <label class="form-check form-switch form-switch-3">
-                    <input class="form-check-input" type="checkbox" />
-                    <span class="form-check-label form-check-label-on">On</span>
-                    <span class="form-check-label form-check-label-off">Off</span>
-                  </label>
+                <div class="form-label">Company</div>
+                <div class="mb-4" id="nameCompany">
                 </div>
                 <div class="form-label">Salary Range</div>
-                <div class="mb-4">
-                  <label class="form-check">
-                    <input type="radio" class="form-check-input" name="form-salary" value="1" checked />
-                    <span class="form-check-label">$20K - $50K</span>
-                  </label>
-                  <label class="form-check">
-                    <input type="radio" class="form-check-input" name="form-salary" value="2" checked />
-                    <span class="form-check-label">$50K - $100K</span>
-                  </label>
-                  <label class="form-check">
-                    <input type="radio" class="form-check-input" name="form-salary" value="3" />
-                    <span class="form-check-label">> $100K</span>
-                  </label>
-                  <label class="form-check">
-                    <input type="radio" class="form-check-input" name="form-salary" value="4" />
-                    <span class="form-check-label">Drawing / Painting</span>
-                  </label>
+                <div class="mb-4" id="salaryRange">
+                  <input type="text" placeholder="From...">tr VND
+                  <input type="text" placeholder="To...">tr VND
                 </div>
-                <div class="form-label">Immigration</div>
-                <div class="mb-4">
-                  <label class="form-check form-switch form-switch-3">
-                    <input class="form-check-input" type="checkbox" />
-                    <span class="form-check-label form-check-label-on">On</span>
-                    <span class="form-check-label form-check-label-off">Off</span>
-                  </label>
-                  <div class="small text-secondary">Only show companies that can sponsor a visa</div>
+                <div class="form-label">Technology</div>
+                <div class="mb-4" id="technologyTypes">
                 </div>
-                <div class="form-label">Location</div>
-                <div class="mb-4">
+                <div class="form-label">Work Types</div>
+                <div class="mb-4" id="filterWorkTypes">
                   <select class="form-select">
                     <option>Anywhere</option>
                     <option>London</option>
@@ -115,10 +72,10 @@
                   </select>
                 </div>
                 <div class="mt-5">
-                  <button class="btn btn-primary w-100">Confirm changes</button>
-                  <a href="#" class="btn btn-link w-100"> Reset to defaults </a>
+                  <button class="btn btn-primary w-100 mb-1" id="btnSearch">Search</button>
+                  <button class="btn w-100"> Clear </button>
                 </div>
-              </form>
+              </div>
             </div>
             <div class="col-md-9">
               <div class="row row-cards">
