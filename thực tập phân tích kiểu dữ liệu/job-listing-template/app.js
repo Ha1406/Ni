@@ -233,20 +233,12 @@ let btnSearch = document.getElementById('btnSearch');
 
 renderFilterArea();
 
-// render jobs
-
 renderList(JOBS);
-
-
-
-
 
 function showRequestItem(content) {
   return /*html*/`<a href="#" class="badge badge-outline text-secondary fw-normal badge-pill">${content}</a> `
 }
-
 function renderFilterArea() {
-  // render filter category
   let htmljobType = '';
   CATEGORY.forEach(jobTypeItem => {
     htmljobType +=/*html*/`
@@ -254,10 +246,8 @@ function renderFilterArea() {
       <input type="checkbox" class="form-check-input" name="form-type[]" value="${jobTypeItem.id}" />
       <span class="form-check-label">${jobTypeItem.name}</span>
     </label>`;
+    filterJobTypes.innerHTML = htmljobType
   })
-  filterJobTypes.innerHTML = htmljobType
-
-  // render filter company
   let htmlCompany = '';
   COMPANY.forEach(companyItem => {
     htmlCompany +=/*html*/`
@@ -265,10 +255,8 @@ function renderFilterArea() {
       <input type="checkbox" class="form-check-input" name="form-type[]" value="${companyItem.id}" />
       <span class="form-check-label">${companyItem.name}</span>
     </label>`;
+    nameCompany.innerHTML = htmlCompany
   })
-  nameCompany.innerHTML = htmlCompany
-
-  // render filter worktype
   let htmlWorkType = '';
   WORK_TYPE.forEach(workTypeItem => {
     htmlWorkType +=/*html*/`
@@ -276,10 +264,8 @@ function renderFilterArea() {
       <input type="checkbox" class="form-check-input" name="form-type[]" value="${workTypeItem.id}" />
       <span class="form-check-label">${workTypeItem.name}</span>
     </label>`;
+    filterWorkTypes.innerHTML = htmlWorkType
   })
-  filterWorkTypes.innerHTML = htmlWorkType
-
-  // render filter technology type
   let htmlTechnologyType = '';
   REQUEST.forEach(technologyItem => {
     htmlTechnologyType +=/*html*/`
@@ -287,10 +273,9 @@ function renderFilterArea() {
       <input type="checkbox" class="form-check-input" name="form-type[]" value="${technologyItem.id}" />
       <span class="form-check-label">${technologyItem.name}</span>
     </label>`;
+    technologyTypes.innerHTML = htmlTechnologyType
   })
-  technologyTypes.innerHTML = htmlTechnologyType
 }
-
 function renderList(list) {
   let html = '';
   list.forEach(jobItem => {
@@ -381,18 +366,37 @@ function renderList(list) {
     elJobList.innerHTML = html;
   });
 }
-
 btnSearch.addEventListener('click', function searchInput() {
   let search = inputSearch.value.trim().toLowerCase();
   let checkCategory = document.querySelectorAll('#filterJobTypes input');
+  let checkNameCompany = document.querySelectorAll('#nameCompany input');
+  let checkTechnologyTypes = document.querySelectorAll('#technologyTypes input');
+  let checkWorkTypes = document.querySelectorAll('#filterWorkTypes input');
   let category = [];
+  let company = [];
+  let technology = [];
+  let workType = [];
 
   checkCategory.forEach((item) => {
     if (item.checked) {
       category.push(parseInt(item.value));
     }
   });
-
+  checkNameCompany.forEach((item) => {
+    if (item.checked) {
+      company.push(parseInt(item.value));
+    }
+  });
+  checkWorkTypes.forEach((item) => {
+    if (item.checked) {
+      workType.push(parseInt(item.value));
+    }
+  });
+  checkTechnologyTypes.forEach((item) => {
+    if (item.checked) {
+      technology.push(parseInt(item.value));
+    }
+  });
   let arrSearch = JOBS.filter(function (jobItem) {
     return jobItem.name.toLowerCase().includes(search);
   });
@@ -401,9 +405,24 @@ btnSearch.addEventListener('click', function searchInput() {
       return category.includes(jobItem.categoryId);
     });
   }
-  renderList(arrSearch);
+  if (company.length > 0) {
+    arrSearch = arrSearch.filter(function (jobItem) {
+      return company.includes(jobItem.companyId);
+    });
+  }
+  if (workType.length > 0) {
+    arrSearch = arrSearch.filter(function (jobItem) {
+      return workType.includes(jobItem.workType);
+    });
+  }
+  if (technology.length > 0) {
+    arrSearch = arrSearch.filter(function (jobItem) {
+      return jobItem.request.some(requestId => technology.includes(requestId));
+    });
+  }
 
-})
+  renderList(arrSearch);
+});
 // const minInput = 9;
 // const maxInput = 12;
 // const testArr = [
