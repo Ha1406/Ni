@@ -230,6 +230,9 @@ let filterWorkTypes = document.getElementById('filterWorkTypes');
 let technologyTypes = document.getElementById('technologyTypes');
 let inputSearch = document.getElementById('inputSearch');
 let btnSearch = document.getElementById('btnSearch');
+let minInput = document.getElementById('salaryMin');
+let maxInput = document.getElementById('salaryMax');
+let btnClear = document.getElementById('btnClear');
 
 renderFilterArea();
 
@@ -376,6 +379,8 @@ btnSearch.addEventListener('click', function searchInput() {
   let company = [];
   let technology = [];
   let workType = [];
+  let min = minInput.value;
+  let max = maxInput.value;
 
   checkCategory.forEach((item) => {
     if (item.checked) {
@@ -420,8 +425,40 @@ btnSearch.addEventListener('click', function searchInput() {
       return jobItem.request.some(requestId => technology.includes(requestId));
     });
   }
-
+  if (min !== '' && max !== '') {
+    arrSearch = arrSearch.filter(function (jobItem) {
+      return ((jobItem.salaryMin <= parseInt(max)
+        && jobItem.salaryMax >= parseInt(min)) ||
+        (jobItem.salaryMax <= parseInt(max)
+          && jobItem.salaryMax >= parseInt(min)));
+    });
+  }
   renderList(arrSearch);
+
+  if (arrSearch.length === 0) {
+    alert('Không tìm thấy công việc phù hợp');
+    elJobList.innerHTML = '';
+  }
+});
+btnClear.addEventListener('click', function clearInput() {
+  inputSearch.value = '';
+  let checkCategory = document.querySelectorAll('#filterJobTypes input');
+  let checkNameCompany = document.querySelectorAll('#nameCompany input');
+  let checkTechnologyTypes = document.querySelectorAll('#technologyTypes input');
+  let checkWorkTypes = document.querySelectorAll('#filterWorkTypes input');
+  checkCategory.forEach((item) => {
+    item.checked = false;
+  });
+  checkNameCompany.forEach((item) => {
+    item.checked = false;
+  });
+  checkTechnologyTypes.forEach((item) => {
+    item.checked = false;
+  });
+  checkWorkTypes.forEach((item) => {
+    item.checked = false;
+  });
+  renderList(JOBS);
 });
 // const minInput = 9;
 // const maxInput = 12;
@@ -445,10 +482,10 @@ btnSearch.addEventListener('click', function searchInput() {
 // const result = [];
 
 // testArr.forEach(item => {
-//   if (
-//     (item.salaryMin <= maxInput && item.salaryMin >= minInput) ||
-//     (item.salaryMax <= maxInput && item.salaryMax >= minInput)
-//   ) {
-//     result.push({ name: item.name, salaryMin: item.salaryMin, salaryMax: item.salaryMax });
+// if (
+//   (item.salaryMin <= maxInput && item.salaryMin >= minInput) ||
+//   (item.salaryMax <= maxInput && item.salaryMax >= minInput)
+// ) {
+//   result.push({ name: item.name, salaryMin: item.salaryMin, salaryMax: item.salaryMax });
 //   }
 // });
