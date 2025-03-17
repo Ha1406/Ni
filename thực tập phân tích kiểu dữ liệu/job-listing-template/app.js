@@ -432,6 +432,15 @@ btnSearch.addEventListener('click', function searchInput() {
         (jobItem.salaryMax <= parseInt(max)
           && jobItem.salaryMax >= parseInt(min)));
     });
+    if (min > max) {
+      alert('Lương tối thiểu không được lớn hơn lương tối đa');
+      elJobList.innerHTML = '';
+      return;
+    }
+  } else if (min !== '' || max !== '') {
+    alert('Vui lòng khi nhập lương cần nhập cả 2');
+    elJobList.innerHTML = '';
+    return;
   }
   renderList(arrSearch);
 
@@ -442,10 +451,13 @@ btnSearch.addEventListener('click', function searchInput() {
 });
 btnClear.addEventListener('click', function clearInput() {
   inputSearch.value = '';
+  minInput.value = '';
+  maxInput.value = '';
   let checkCategory = document.querySelectorAll('#filterJobTypes input');
   let checkNameCompany = document.querySelectorAll('#nameCompany input');
   let checkTechnologyTypes = document.querySelectorAll('#technologyTypes input');
   let checkWorkTypes = document.querySelectorAll('#filterWorkTypes input');
+
   checkCategory.forEach((item) => {
     item.checked = false;
   });
