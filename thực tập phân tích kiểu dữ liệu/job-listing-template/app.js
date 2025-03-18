@@ -426,21 +426,32 @@ btnSearch.addEventListener('click', function searchInput() {
     });
   }
   if (min !== '' && max !== '') {
-    arrSearch = arrSearch.filter(function (jobItem) {
-      return ((jobItem.salaryMin <= parseInt(max)
-        && jobItem.salaryMax >= parseInt(min)) ||
-        (jobItem.salaryMax <= parseInt(max)
-          && jobItem.salaryMax >= parseInt(min)));
-    });
     if (min > max) {
       alert('Lương tối thiểu không được lớn hơn lương tối đa');
       elJobList.innerHTML = '';
       return;
     }
-  } else if (min !== '' || max !== '') {
-    alert('Vui lòng khi nhập lương cần nhập cả 2');
-    elJobList.innerHTML = '';
-    return;
+    arrSearch = arrSearch.filter(function (jobItem) {
+      return ((jobItem.salaryMin <= parseInt(max)
+        && jobItem.salaryMin >= parseInt(min)) ||
+        (jobItem.salaryMax <= parseInt(max)
+          && jobItem.salaryMax >= parseInt(min)));
+    });
+
+  } else if (min !== '') {
+    arrSearch = arrSearch.filter(function (jobItem) {
+      return ((jobItem.salaryMin >= parseInt(min))
+        || (jobItem.salaryMax >= parseInt(min)))
+    })
+  } else if (max !== '') {
+    // 17
+    // 13-17,17-20,12-50
+    arrSearch = arrSearch.filter(function (jobItem) {
+      return ((jobItem.salaryMin <= parseInt(max))
+        || (jobItem.salaryMax <= parseInt(max)))
+    })
+    console.log(arrSearch);
+
   }
   renderList(arrSearch);
 
