@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAMES</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body data-mdb-theme="dark">
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Popular GAMES</h1>
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="row" id="searchGames">
+          <div class="col-md-6 col-xl-4">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputSearch" />
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-8">
+            <div class="mb-3">
+              <label class="form-label">Released Date</label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-group">
+                    <span class="input-group-text">From</span>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-group">
+                    <span class="input-group-text">To</span>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label">Platforms</label>
+              <div class="d-flex flex-wrap gap-4" id="filterPlatforms">
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" />
+                    PC
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" />
+                    PlayStation
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label">Genres</label>
+              <div class="d-flex flex-wrap gap-4" id="filterGenres">
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" />
+                    Action
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" />
+                    RPG
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-primary" id="btnSearch">Search</button>
+        <button type="button" class="btn btn-danger" id="btnClear">Clear</button>
+      </div>
+    </div>
+    <div class="row" id="allGames">
+      <div class="col-md-6 col-xl-4">
+        <div class="card">
+          <div class="bg-image">
+            <img src="https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg" class="img-fluid" />
+          </div>
+          <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="released-date">2015-05-18</span>
+              <span class="badge badge-success metascore">92</span>
+            </div>
+            <h3 class="card-title mt-2">The Witcher 3: Wild Hunt</h3>
+            <div class="table-info">
+              <table class="table table-sm mb-0">
+                <tbody>
+                  <tr>
+                    <td>Rating</td>
+                    <td class="text-end">4.65</td>
+                  </tr>
+                  <tr>
+                    <td>Platforms</td>
+                    <td class="text-end">
+                      <span class="badge badge-primary">PC</span>
+                      <span class="badge badge-primary">PlayStation</span>
+                      <span class="badge badge-primary">Xbox</span>
+                      <span class="badge badge-primary">Apple Macintosh</span>
+                      <span class="badge badge-primary">Nintendo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Genres</td>
+                    <td class="text-end">
+                      <span class="badge badge-info">Action</span>
+                      <span class="badge badge-info">RPG</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-6 col-xl-4">
+        <div class="card">
+          <div class="bg-image">
+            <img src="https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg" class="img-fluid" />
+          </div>
+          <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="released-date">2015-05-18</span>
+              <span class="badge badge-success metascore">92</span>
+            </div>
+            <h3 class="card-title mt-2">The Witcher 3: Wild Hunt</h3>
+            <div class="table-info">
+              <table class="table table-sm mb-0">
+                <tbody>
+                  <tr>
+                    <td>Rating</td>
+                    <td class="text-end">4.65</td>
+                  </tr>
+                  <tr>
+                    <td>Platforms</td>
+                    <td class="text-end">
+                      <span class="badge badge-primary">PC</span>
+                      <span class="badge badge-primary">PlayStation</span>
+                      <span class="badge badge-primary">Xbox</span>
+                      <span class="badge badge-primary">Apple Macintosh</span>
+                      <span class="badge badge-primary">Nintendo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Genres</td>
+                    <td class="text-end">
+                      <span class="badge badge-info">Action</span>
+                      <span class="badge badge-info">RPG</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="col-md-6 col-xl-4">
+        <div class="card">
+          <div class="bg-image">
+            <img src="https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg" class="img-fluid" />
+          </div>
+          <div class="card-body p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="released-date">2015-05-18</span>
+              <span class="badge badge-success metascore">92</span>
+            </div>
+            <h3 class="card-title mt-2">The Witcher 3: Wild Hunt</h3>
+            <div class="table-info">
+              <table class="table table-sm mb-0">
+                <tbody>
+                  <tr>
+                    <td>Rating</td>
+                    <td class="text-end">4.65</td>
+                  </tr>
+                  <tr>
+                    <td>Platforms</td>
+                    <td class="text-end">
+                      <span class="badge badge-primary">PC</span>
+                      <span class="badge badge-primary">PlayStation</span>
+                      <span class="badge badge-primary">Xbox</span>
+                      <span class="badge badge-primary">Apple Macintosh</span>
+                      <span class="badge badge-primary">Nintendo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Genres</td>
+                    <td class="text-end">
+                      <span class="badge badge-info">Action</span>
+                      <span class="badge badge-info">RPG</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script>
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

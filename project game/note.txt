@@ -1,0 +1,9 @@
+Cấu trúc HTML: Cấu trúc HTML được thiết kế để tạo đầu vào hộp kiểm cho từng nền tảng trong mảng PLATFORMS. Mỗi hộp kiểm có một nhãn tương ứng hiển thị tên nền tảng.
+Nội dung động: Vòng lặp forEach lặp lại từng mục trong mảng PLATFORMS và tạo động nội dung HTML cho từng nền tảng.
+Hiển thị đúng: Phần tử label hiện hiển thị đúng tên của từng nền tảng, đảm bảo rằng người dùng nhìn thấy tên nền tảng thay vì chỉ thấy id.
+Tại sao HTML cũ chỉ hiển thị ID:
+Cấu trúc HTML cũ đã đúng khi sử dụng id cho phần tử đầu vào, nhưng nếu có vấn đề với việc chỉ hiển thị id, thì có thể là do:
+
+Liên kết dữ liệu không chính xác: Nếu tên không được liên kết chính xác với phần tử nhãn, thì tên sẽ không hiển thị đúng.
+Sự cố dữ liệu: Nếu mảng PLATFORMS không có giá trị tên chính xác, thì sẽ dẫn đến hiển thị không chính xác.
+Bằng cách đảm bảo rằng tên được liên kết chính xác với phần tử nhãn, mã được cập nhật sẽ hiển thị cả id và tên chính xác trong HTML.
