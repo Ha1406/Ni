@@ -1,0 +1,144 @@
+body {
+  font-family: "Nunito";
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-48 {
+  width: 48% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+.about-us-avatar {
+  width: 60px;
+}
+
+.about-us-sub-image {
+  bottom: 10%;
+  left: -10%;
+  width: 40%;
+}
+
+.about-us-experience-wrapper {
+  right: 8%;
+  bottom: 8%;
+}
+
+
+.line-under-Features {
+  width: 60px;
+}
+
+.line-under {
+  width: 50px;
+}
+
+.line-under-quantity {
+  width: 25px;
+}
+
+.tab-header-wrapper .nav-link {
+  border-radius: var(--bs-border-radius-pill) !important;
+  color: black;
+}
+
+.tab-header-wrapper .nav-link.active {
+  background: rgb(71, 140, 223);
+  color: white;
+  border-radius: var(--bs-border-radius-pill) !important;
+  border: none;
+}
+
+.price-value {
+  font-size: 50px;
+}
+
+.price-period {
+  font-size: 16px;
+  margin-left: -10px;
+  display: inline-block;
+}
+
+.call-to-action-title {
+  font-size: 50px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-primary);
+  background: inherit;
+}
+
+.fs-7 {
+  font-size: smaller;
+}
+
+.fs-8 {
+  font-size: 39px;
+}
+
+.p-6 {
+  padding: 0.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-80 {
+    width: 80%;
+  }
+
+  .w-md-75 {
+    width: 75% !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-us-sub-image {
+    position: static !important;
+    width: 100%;
+  }
+
+  .about-us-experience-wrapper {
+    position: static !important;
+    width: fit-content;
+    margin: auto
+  }
+
+  .features-row {
+    flex-direction: column-reverse;
+  }
+
+  .call-to-action-title {
+    font-size: 40px;
+  }
+
+  .bg-primary.rounded-circle.p-2 {
+    background: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+  .change-display.bg-secondary.rounded-circle.p-2.bg-opacity-50 {
+    background: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .change-display.bg-secondary.rounded-circle.p-2.bg-opacity-50 {
+    background: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+  .changeDisplay.bg-secondary.rounded-circle.p-2.bg-opacity-50 {
+    background: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  }
+}
