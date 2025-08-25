@@ -1,0 +1,6 @@
+thêm chức năng tìm kiếm và clear(xóa kết quả tìm kiếm và quay lại danh sách cũ)(thêm vô trong NoteForm cho gọn đẹp)
+
+
+removeVietnameseAccents là tìm trên web và gemini hướng dẫn
+
+thêm nút sắp xếp tăng giảm chữ
